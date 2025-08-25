@@ -33,8 +33,38 @@ nome = 'andre'
 print(nome)
 
 # input() -> le um valor digitado no teclado do usuario
-seuNome = input('qual é o seu nome?')
-print(seuNome)
+# seuNome = input('qual é o seu nome?')
+# print(seuNome)
 
 # help() -> mostra as funcionalidades de uma funcao
-help(max)
+# help(max)
+
+# exercicio
+
+# calcule a soma dos numeros do 10 ao 14
+
+calculo1 = ({10, 11, 12, 13, 14})
+resultado1 = sum(calculo1)
+print(resultado1)
+
+# calcule a media entre os numeros 10, 15, 20
+calculo2 = ({10, 15, 20})
+resultado2 = sum(calculo2)
+media = resultado2//3
+print(media)
+
+# peca para o usuario digitar duas notas de zero a dez e o peso das notas calcule a media ponderada entre elas
+# exemplo(nota1*peso1+nota2*peso2)/(peso1+peso2)
+# lembrando que a soma dos pesos tem que dar dez
+
+nota1 = input('Digite o valor da nota1:')
+nota1 = eval(nota1)
+nota2 = input('Digite o valor da nota2:')
+nota2 = eval(nota2)
+peso1 = input('Digite o peso da nota1:')
+peso1 = eval(peso1)
+peso2 = input('Digite o peso da nota2:')
+peso2 = eval(peso2)
+
+media = (nota1*peso1+nota2*peso2) // (peso1+peso2)
+print(f'a media final é: {media}')
