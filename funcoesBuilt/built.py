@@ -57,14 +57,48 @@ print(media)
 # exemplo(nota1*peso1+nota2*peso2)/(peso1+peso2)
 # lembrando que a soma dos pesos tem que dar dez
 
-nota1 = input('Digite o valor da nota1:')
-nota1 = eval(nota1)
-nota2 = input('Digite o valor da nota2:')
-nota2 = eval(nota2)
-peso1 = input('Digite o peso da nota1:')
-peso1 = eval(peso1)
-peso2 = input('Digite o peso da nota2:')
-peso2 = eval(peso2)
+# nota1 = input('Digite o valor da nota1:')
+# nota1 = eval(nota1)
+# nota2 = input('Digite o valor da nota2:')
+# nota2 = eval(nota2)
+# peso1 = input('Digite o peso da nota1:')
+# peso1 = eval(peso1)
+# peso2 = input('Digite o peso da nota2:')
+# peso2 = eval(peso2)
 
-media = (nota1*peso1+nota2*peso2) // (peso1+peso2)
-print(f'a media final é: {media}')
+# media = (nota1*peso1+nota2*peso2) // (peso1+peso2)
+# print(f'a media final é: {media}')
+
+
+# qual é o menor preco dessa lista R$100.20 R$34.90 R$31.50 R$18.95
+
+listaPreco = ({100.20, 34.90, 31.50, 18.95})
+menorPreco = min(listaPreco)
+print(menorPreco)
+precoInteiro = int(menorPreco)  # para cortar a parte decimal
+print(precoInteiro)
+
+# Avalie se o numero digitado pelo usuario é par ou impar, se for par a saida deve mostrar e true e se for impar deve mostrar é false
+
+numeroDigitado = eval(input('digite um numero'))
+
+if numeroDigitado % 2 == 0:
+    print(f'O numero {numeroDigitado} é par')
+else:
+    print(f'O numero {numeroDigitado} é impar')
+
+# Verifique se o menor numero dessa lista R$100.20 R$34.90 R$31.50 R$18.95 é menor que 20
+
+lista = ({100.20, 34.90, 31.50, 18.95})
+listaMenorPreco = min(lista)
+
+if listaMenorPreco <= 20:
+    print(f'{listaMenorPreco} O menor valor dessa lista é menor que 20')
+else:
+    print(f'{listaMenorPreco} O menor valor dessa lista é  maior que 20')
+
+# faca um programa que converta a temperatura em graus fahrenheit para graus celseus
+
+fahrenheit = eval(input('Digite a Temperatura em graus fahrenheit:'))
+celseus = (fahrenheit - 32) / 1.8  # ou (5 / 9) * (fahrenheit - 32)
+print(f'A temperatura em graus celseus é: {celseus}')
