@@ -18,3 +18,6 @@ while numero <= numeroMax:
     print(numero)
     numero += 1
 print('the loop end')
+
+
+
